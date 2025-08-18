@@ -8,7 +8,7 @@ class StoreTicketRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return true; // ajustar (login)
+        return true;
     }
 
     public function rules(): array
