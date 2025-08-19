@@ -11,9 +11,11 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        Ticket::factory()->count(5)->create();
         $this->call([
             UserSeeder::class
+        ]);
+        $this->call([
+            TicketSeeder::class
         ]);
     }
 }
